@@ -1,2 +1,3 @@
-# Tic_Tok_Toe
-Tic Tok Toe game using Java.
+# Tic_Toc_Toe
+Tic Toc Toe game using Java.
+Using Minimax algorithm.
