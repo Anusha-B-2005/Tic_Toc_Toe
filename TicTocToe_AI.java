@@ -2,8 +2,8 @@ import java.util.Scanner;
 
 public class TicTacToeAI {
 
-    private static final char huPlayer = 'O'; 
-    private static final char aiPlayer = 'X'; 
+    private static final char huPlayer = 'O'; //Human Player(minimizing player)
+    private static final char aiPlayer = 'X'; //AI player(maximizing player)
     private static char[] board = new char[9]; 
     private static int[][] winCombos = {
             {0, 1, 2}, {3, 4, 5}, {6, 7, 8}, 
@@ -116,6 +116,7 @@ public class TicTacToeAI {
         return bestMove;
     }
 
+    //MiniMax Alogorithm
     public static int minmax(char[] newBoard, boolean isMaximizing) {
         if (checkWin(aiPlayer)) return 1;
         if (checkWin(huPlayer)) return -1;
