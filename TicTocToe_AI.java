@@ -19,7 +19,7 @@ public class TicTacToeAI {
         resetBoard();
         printBoard();
         while (true) {
-            playerTurn();
+            playerTurn();//Human Turn
             printBoard();
             if (checkWin(huPlayer)) {
                 System.out.println("You Win!");
